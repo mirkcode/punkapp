@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2021. Mirko Varese
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:paddingStart="@dimen/horizontal_page_margin"
+    android:paddingEnd="@dimen/horizontal_page_margin"
+    android:layout_marginStart="@dimen/horizontal_page_margin"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center"
+    android:background="@drawable/accent_radius_bg"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/maltName_txt"
+        style="@style/TextView.Bold"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        tools:text="Name" />
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/maltAmount_txt"
+        style="@style/TextView.Light"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        tools:text="14 kg" />
+</LinearLayout>

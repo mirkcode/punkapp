@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_font_size">16sp</dimen>
+    <dimen name="error_anim_size">50dp</dimen>
+    <dimen name="horizontal_page_margin">12dp</dimen>
+    <dimen name="details_card_radius">10dp</dimen>
+</resources>

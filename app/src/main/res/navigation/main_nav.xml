@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/beer_list_dest">
+
+    <fragment
+        android:id="@+id/beer_list_dest"
+        android:name="com.mvaresedev.punkapp.ui.beer_list.BeerListFragment"
+        android:label="select_visualization"
+        tools:layout="@layout/fragment_beer_list" >
+        <action
+            android:id="@+id/action_beer_detail_items"
+            app:destination="@id/beer_detail_dest"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/beer_detail_dest"
+        android:name="com.mvaresedev.punkapp.ui.beer_detail.BeerDetailFragment"
+        android:label="detail"
+        tools:layout="@layout/fragment_beer_detail" >
+        <argument
+            android:name="beer"
+            app:argType="com.mvaresedev.punkapp.domain.models.Beer"
+            app:nullable="false" />
+    </fragment>
+</navigation>

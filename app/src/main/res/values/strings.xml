@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Punk-App</string>
+    <string name="filters_brewed_after">Brewed after:</string>
+    <string name="filters_brewed_before">Brewed before:</string>
+    <string name="filters_unselected">None</string>
+    <string name="filters_clear">CLEAR</string>
+    <string name="retry_loading">TRY AGAIN</string>
+    <string name="generic_error_message">Ops! Something went wrong.</string>
+    <string name="detail_abv">ABV:</string>
+    <string name="detail_attenuation_level">Attenuation level:</string>
+    <string name="detail_boil_volume">Boil volume:</string>
+    <string name="detail_volume">Volume</string>
+    <string name="detail_ebc">EBC:</string>
+    <string name="detail_srm">SRM:</string>
+    <string name="detail_ibu">IBU:</string>
+    <string name="detail_ph">Ph:</string>
+    <string name="detail_first_brewed">First brewed:</string>
+    <string name="detail_target_fg">Target final gravity:</string>
+    <string name="detail_target_og">Target original gravity:</string>
+    <string name="detail_ingredients_title">INGREDIENTS</string>
+    <string name="detail_malt">Malt:</string>
+    <string name="detail_hops">Hops:</string>
+    <string name="detail_hop_add">Add:</string>
+    <string name="detail_hop_amount">Amount:</string>
+    <string name="detail_hop_attribute">Attribute:</string>
+    <string name="detail_yeast">Yeast:</string>
+    <string name="detail_method_title">METHOD</string>
+    <string name="detail_mash_temperatures">Mash temperatures:</string>
+    <string name="detail_item_duration">Duration:</string>
+    <string name="detail_fermentation_temperature">Fermentation temperature:</string>
+    <string name="detail_twist">Twist:</string>
+    <string name="detail_more_title">MORE:</string>
+    <string name="detail_brewers_tips">Brewers tips:</string>
+    <string name="detail_food_pairing">Food pairing:</string>
+</resources>
