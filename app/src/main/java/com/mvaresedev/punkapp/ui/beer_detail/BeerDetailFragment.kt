@@ -15,6 +15,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.navArgs
 import com.binaryfork.spanny.Spanny
@@ -25,12 +26,13 @@ import com.mvaresedev.punkapp.ui.beer_detail.adapters.HopListAdapter
 import com.mvaresedev.punkapp.ui.beer_detail.adapters.MaltListAdapter
 import com.mvaresedev.punkapp.ui.beer_detail.adapters.MashTemperatureListAdapter
 import com.mvaresedev.punkapp.utils.CustomTypefaceSpan
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class BeerDetailFragment: Fragment() {
 
     private val args: BeerDetailFragmentArgs by navArgs()
-    private val viewModel by viewModel<BeerDetailViewModel>()
+    private val viewModel by viewModels<BeerDetailViewModel>()
 
     private val maltAdapter by lazy { MaltListAdapter() }
     private val hopsAdapter by lazy { HopListAdapter() }

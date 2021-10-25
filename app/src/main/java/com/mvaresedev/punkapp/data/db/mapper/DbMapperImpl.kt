@@ -8,8 +8,9 @@ import com.mvaresedev.punkapp.data.db.entities.BeerEntity
 import com.mvaresedev.punkapp.domain.mapper.DbMapper
 import com.mvaresedev.punkapp.domain.models.Beer
 import java.util.*
+import javax.inject.Inject
 
-class DbMapperImpl : DbMapper {
+class DbMapperImpl @Inject constructor(): DbMapper {
 
     override fun mapBeerEntityToDomain(beerEntity: BeerEntity): Beer {
         return with(beerEntity) {

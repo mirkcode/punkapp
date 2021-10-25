@@ -11,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.mvaresedev.punkapp.R
@@ -18,16 +19,17 @@ import com.mvaresedev.punkapp.databinding.FragmentBeerListBinding
 import com.mvaresedev.punkapp.domain.models.Beer
 import com.mvaresedev.punkapp.ui.beer_list.adapters.BeerLoadingAdapter
 import com.mvaresedev.punkapp.ui.beer_list.adapters.BeerPagingAdapter
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
-import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.util.*
 
+@AndroidEntryPoint
 @ExperimentalCoroutinesApi
 class BeerListFragment : Fragment() {
 
-    private val viewModel by viewModel<BeerListViewModel>()
+    private val viewModel by viewModels<BeerListViewModel>()
     private val adapter by lazy { BeerPagingAdapter(::onItemCLick) }
 
     private var _binding: FragmentBeerListBinding? = null

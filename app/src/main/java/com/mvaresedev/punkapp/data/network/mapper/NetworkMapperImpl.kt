@@ -10,8 +10,9 @@ import com.mvaresedev.punkapp.domain.models.*
 import java.lang.Exception
 import java.text.SimpleDateFormat
 import java.util.*
+import javax.inject.Inject
 
-class NetworkMapperImpl: NetworkMapper {
+class NetworkMapperImpl @Inject constructor(): NetworkMapper {
 
     private val dateFormat = SimpleDateFormat("MM/yyyy", Locale.ROOT)
 

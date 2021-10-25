@@ -15,15 +15,18 @@ import com.mvaresedev.punkapp.ui.beer_list.models.BeerListFilter
 import com.mvaresedev.punkapp.utils.Event
 import com.mvaresedev.punkapp.utils.isSameOf
 import com.mvaresedev.punkapp.utils.setMonthYearInstance
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.*
+import javax.inject.Inject
 
+@HiltViewModel
 @ExperimentalCoroutinesApi
-class BeerListViewModel(
+class BeerListViewModel @Inject constructor(
     private val repository: PunkRepository,
     private val savedStateHandle: SavedStateHandle
 ) : ViewModel() {

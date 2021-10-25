@@ -13,8 +13,9 @@ import com.mvaresedev.punkapp.domain.mapper.NetworkMapper
 import com.mvaresedev.punkapp.domain.repo.PunkRepository
 import com.mvaresedev.punkapp.ui.beer_list.models.BeerListFilter
 import kotlinx.coroutines.flow.map
+import javax.inject.Inject
 
-class PunkRepositoryImpl(
+class PunkRepositoryImpl @Inject constructor(
     private val punkApi: PunkApi,
     private val punkDatabase: PunkDatabase,
     private val networkMapper: NetworkMapper,
